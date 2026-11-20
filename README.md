@@ -112,11 +112,20 @@ https://screenshots/9.jpg
 3. Лог команд
 git config --global user.name "liska14"
 git config --global user.email "sdfsd@gmail.com"
+
+# Лабораторная работа №6: Система контроля версий
+
+## Лог команд 
+```bash
+git config --global user.name "..."
+git config --global user.email "..."
+
 git clone https://github.com/liska14/lab6.git
 git pull origin main
 git log --oneline --graph --all
 git checkout -b feature-branch
 git add .
+
 git commit -m "Добавил изменения в ветке feature-branch"
 git checkout main
 git merge feature-branch
@@ -139,3 +148,10 @@ git log --pretty=format:"%h | %ad | %an | %s" --date=short
 
 Вывод
 В ходе выполнения лабораторной работы были изучены базовые возможности системы управления версиями Git. Я научилась создавать и настраивать репозитории, клонировать их на локальный компьютер, работать с ветками и выполнять их слияние. Также были отработаны навыки создания коммитов, просмотра истории изменений и отправки готового отчета на удаленный сервер GitHub. Полученные знания позволяют эффективно контролировать версии файлов и безопасно вносить изменения в проект.
+
+git commit -m "..."
+git checkout main
+git merge feature-branch
+git branch -d feature-branch
+git checkout -b report-branch
+
